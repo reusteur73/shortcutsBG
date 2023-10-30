@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Raccourcis utiles !</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="C:\Users\raphr\OneDrive\Bureau\Code\raccourcis\raccourcis.html">Accueil</a>
+        <a href="C:\Users\raphr\OneDrive\Bureau\Code\raccourcis\info.html">Infos</a>
+        <a href="C:\Users\raphr\OneDrive\Bureau\Code\raccourcis\contact.html">Contact</a>
+        <a href="C:\Users\raphr\OneDrive\Bureau\Code\raccourcis\+d'apps.html">Toujours +</a>
+    </div>
+    <div class="container">
+        <div id="datetime" class="datetime"></div>
+        <h1>Raccourcis utiles !</h1>
+        <ul class="shortcuts">
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            <li><a href="https://www.spotify.com/" target="_blank">Spotify</a></li>
+            <li><a href="https://www.deezer.com/fr/" target="_blank">Deezer</a></li>
+            <li><a href="https://www.netflix.com/" target="_blank">Netflix</a></li>
+            <li><a href="https://www.disneyplus.com/" target="_blank">Disney+</a></li>
+            <li><a href="https://www.ocs.fr" target="_blank">OCS</a></li>
+            <li><a href="https://www.amazon.com/primevideo" target="_blank">Amazon Prime Video</a></li>
+            <li><a href="https://drive.google.com/drive/my-drive" target="_blank">Google Drive</a></li>
+            <li><a href="https://calendar.google.com/calendar/u/0/r?pli=1" target="_blank">Google Agenda</a></li>
+            <li><a href="https://mail.google.com/mail/u/0/?pli=1#inbox" target="_blank">Gmail</a></li>
+            <li><a href="https://chat.openai.com" target="_blank">ChatGPT</a></li>
+            <li><a href="F:\Code\choisirfilm\choisirfilmmain.html"target="_blank">Choisir</a></li> 
+            <li><a href="file:///F:/Code/rappel/rappel.html"target="_blank">Rappels</a></li>
+            <li><a href="https://ent.univ-lorraine.fr/#Tous" target="_blank">ENT Univ-lorraine</a></li>          
+            <!-- Ajoutez d'autres raccourcis ici -->
+        </ul>
+    </div>
+    <script>
+        function updateDateTime() {
+            const dateTimeElement = document.getElementById("datetime");
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'};
+            const formattedDate = now.toLocaleDateString('fr-FR', options);
+            dateTimeElement.textContent = formattedDate;
+        }
+        // Mettre à jour l'heure et la date toutes les secondes
+        setInterval(updateDateTime, 1000);
+
+        // Appel initial pour afficher immédiatement l'heure et la date
+        updateDateTime();
+    </script>
+</body>
+</html>
