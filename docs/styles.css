@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #343a40; /* Couleur de fond sombre */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #E040FB;
+}
+h1 {
+    color: whitesmoke; /* Couleur du titre */
+    border: 2px solid #17a2b8; /* Couleur de la bordure */
+    padding: 8px; /* Espace interne à la bordure */
+    border-radius: 5px; /* Arrondi de la bordure */
+    margin-bottom: 20px; /* Espacement en dessous du titre encadré */
+}
+   
+.shortcuts {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.shortcuts li {
+    margin-bottom: 10px;
+}
+ul.app {
+    list-style: none;
+    padding: 0;
+    max-width: 400px; /* Définir la largeur maximale souhaitée */
+    margin: 0 auto; /* Pour centrer la liste */}
+
+/* Style pour chaque élément de la liste */
+ul.app li {
+    margin-bottom: 10px;
+}
+
+/* Style pour les liens dans la liste */
+ul.app li a {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-align: center; /* Aligner le texte au centre */
+    transition: background-color 0.3s ease;
+}
+ul.app li a:hover {
+    background-color: #292525;
+}
+.shortcuts a {
+    display: block;
+    width: 100%;
+    padding: 9px 0;
+    background-color: #17a2b8; /* Couleur des raccourcis */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.shortcuts a:hover {
+    background-color: #138496; /* Couleur au survol des raccourcis */
+}
+#datetime {
+    color: #17a2b8; /* Couleur du texte */
+    margin-bottom: 10px; /* Marge en bas */
+    font-weight: bold; /* Texte en gras */
+    text-align: center; /* Alignement au centre */
+    width: 100%; /* Utilise toute la largeur du conteneur */
+    border: 2px solid #17a2b8; /* Ajout d'une bordure */
+    padding: 10px 0; /* Espace interne à la bordure (même que les autres raccourcis) */
+    border-radius: 5px; /* Arrondi de la bordure */
+}
